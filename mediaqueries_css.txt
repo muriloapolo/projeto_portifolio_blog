@@ -1,0 +1,86 @@
+/* smarthphone */
+@media only screen 
+   and (min-width : 320px) {
+   /* Styles here */
+}
+
+/* Tablet */
+@media only screen 
+   and (min-width : 768px) {
+   /* Styles here */
+}
+
+/* desktop */
+@media only screen 
+   and (min-width : 1600px) {
+   /* Styles here */
+}
+
+
+/* Grid */
+<div class="container">
+  <div class="sidebar">
+    <div class="cabe�alho"></div>
+    <div class="redes"></div>
+    <div class="apresenta��o"></div>
+  </div>
+  <div class="blog">
+    <div class="titulo"></div>
+    <div class="post1"></div>
+    <div class="post0"></div>
+    <div class="post2"></div>
+  </div>
+  <div class="menu"></div>
+</div>
+
+/* CSS DO GRID*/
+.container {  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 1.1fr;
+  grid-template-rows: 0.5fr 1fr 2.7fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.sidebar {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 0.3fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "perfil perfil perfil"
+    "redes redes redes"
+    "apresenta��o apresenta��o apresenta��o";
+  grid-area: 1 / 1 / 5 / 2;
+}
+
+.cabe�alho { grid-area: cabe�alho; }
+
+.redes { grid-area: redes; }
+
+.apresenta��o { grid-area: apresenta��o; }
+
+.blog {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "post0 post0 post0"
+    "post1 post1 post1"
+    "post2 post2 post2";
+  grid-area: 2 / 2 / 5 / 4;
+}
+
+.titulo { grid-area: titulo; }
+
+.post1 { grid-area: post1; }
+
+.post0 { grid-area: post0; }
+
+.post2 { grid-area: post2; }
+
+.menu { grid-area: 1 / 1 / 2 / 4; }
+
+/* Link para Grid */
+https://grid.layoutit.com/?id=o9uC3Oj
