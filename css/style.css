@@ -10,46 +10,38 @@ body {
     width: 100%;
 }
 
-/* CSS DO GRID*/
 .container {
     display: grid;
-    grid-template-columns: 0.8fr 1.1fr 1.1fr;
-    grid-template-rows: 0.5fr 1fr 2.7fr 0.4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.3fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    grid-template-areas:
+        "sidebar blog blog"
+        "sidebar blog blog"
+        "sidebar blog blog";
 }
 
 .sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.3fr 0.4fr 1.3fr;
+    grid-template-rows: 1.4fr 0.4fr 1.2fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "cabecalho cabecalho cabecalho"
-        "redes redes redes"
+        "perfil perfil perfil"
+        "landText landText landText"
+        "apresentacao apresentacao apresentacao"
         "apresentacao apresentacao apresentacao";
-    grid-area: 1 / 1 / 5 / 2;
+    grid-area: sidebar;
 }
 
-.cabecalho {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". . ."
-        ". . ."
-        ". . .";
-    grid-area: cabecalho;
+.perfil {
+    grid-area: perfil;
 }
 
-.redes {
-    grid-area: redes;
+.landText {
+    grid-area: landText;
 }
 
 .apresentacao {
@@ -57,39 +49,8 @@ body {
 }
 
 .blog {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "titulo titulo titulo"
-        "post0 post0 post0"
-        "post1 post1 post1"
-        "post2 post2 post2";
-    grid-area: 2 / 2 / 5 / 4;
+    grid-area: blog;
 }
-
-.titulo {
-    grid-area: titulo;
-}
-
-.post1 {
-    grid-area: post1;
-}
-
-.post0 {
-    grid-area: post0;
-}
-
-.post2 {
-    grid-area: post2;
-}
-
-.menu {
-    grid-area: 1 / 1 / 2 / 4;
-}
-
 
 
 /* smarthphone */
@@ -97,14 +58,11 @@ body {
 
     /* Styles here */
     .sidebar {
-
-        background-image: url(../assets/image/bgPerfil.jpg); 
+        background-image: url(../assets/image/bgPerfil.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -118,7 +76,8 @@ body {
     }
 
     .perfil {
-        width: 12rem;
+        margin-bottom: 2remx;
+        width: 13rem;
 
     }
 
@@ -126,8 +85,12 @@ body {
         width: 100%;
         border-radius: 50%;
         overflow: hidden;
-        outline: 3px solid gray;
-        box-shadow: 0px 0px 10px black;
+        outline: 3px solid rgb(255, 255, 255);
+        box-shadow: 0px 1px 10px black;
+    }
+
+    .landText {
+        margin-bottom: 10px;
     }
 
     .textNome {
@@ -135,7 +98,6 @@ body {
         font-size: 1.5rem;
         font-weight: 500;
         color: #fff;
-
     }
 
     .apresentacao {
@@ -151,7 +113,7 @@ body {
     }
 
     .textoApresentacao {
-        margin: 20px 0;
+        margin: 5px 0;
         color: #fff;
         font-weight: 400;
     }
@@ -165,30 +127,33 @@ body {
     }
 
     .redes i,
-    .iconTec i {  
+    .iconTec i {
         padding: 5px;
         font-size: 1.8em;
     }
 }
+
 @media only screen and (orientation: landscape) {
     .perfil {
-        width: 8rem;  
+        width: 8rem;
     }
 
-.landText{   
-    width: 320px;
-}
+    .landText {
+        width: 320px;
+    }
+
     .textNome {
         font-size: 1.5rem;
     }
-    
+
     .textoApresentacao {
         margin: 5px 0;
         color: #fff;
         font-weight: 400;
     }
 
-  }
+}
+
 /* Tablet */
 @media only screen and (min-width : 768px) {
     /* Styles here */
