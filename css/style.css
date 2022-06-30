@@ -72,6 +72,7 @@ body {
         flex-wrap: nowrap;
         padding: 0 10px;
         box-sizing: border-box;
+        transition: 0.1s all;
 
     }
 
@@ -148,7 +149,7 @@ body {
 
     .textoApresentacao {
         margin: 5px 0;
-        color: #fff;
+        color: rgb(255, 255, 255);
         font-weight: 400;
     }
 
@@ -157,6 +158,24 @@ body {
 /* Tablet */
 @media only screen and (min-width : 768px) {
     /* Styles here */
+    .perfil {
+        width: 18rem;
+    }
+
+    .landText {
+        width: 320px;
+    }
+
+    .textNome {
+        font-size: 2.5rem;
+    }
+
+    .textoApresentacao {
+        font-size: 2rem;
+        margin: 5px 0;
+        color: rgb(255, 255, 255);
+        font-weight: 100;
+    }
 }
 
 /* desktop */
