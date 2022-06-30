@@ -17,23 +17,35 @@ body {
     grid-template-rows: 0.5fr 1fr 2.7fr 0.4fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.3fr 0.3fr 1.4fr;
+    grid-template-rows: 1.3fr 0.4fr 1.3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "perfil perfil perfil"
+        "cabecalho cabecalho cabecalho"
         "redes redes redes"
-        "apresentacaoo apresentacao apresentacao";
+        "apresentacao apresentacao apresentacao";
     grid-area: 1 / 1 / 5 / 2;
 }
 
 .cabecalho {
-    grid-area: perfil;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    grid-area: cabecalho;
 }
 
 .redes {
@@ -78,20 +90,17 @@ body {
     grid-area: 1 / 1 / 2 / 4;
 }
 
-.container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
+
 
 /* smarthphone */
-@media only all and (min-width : 250px) {
+@media only screen and (min-width : 300px) {
 
     /* Styles here */
     .sidebar {
-        background-image: url(../assets/image/bgPerfil.jpg);
+
+        background-image: url(../assets/image/bgPerfil.jpg); 
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
         top: 0;
@@ -99,28 +108,31 @@ body {
         width: 100vw;
         height: 100vh;
         display: flex;
-        box-sizing: border-box;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+    }
+
+    .perfil {
+        width: 12rem;
 
     }
 
     .imgPerfil {
-        width: 12em;
+        width: 100%;
         border-radius: 50%;
         overflow: hidden;
         outline: 3px solid gray;
         box-shadow: 0px 0px 10px black;
-
-
     }
 
     .textNome {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: 500;
         color: #fff;
 
@@ -131,48 +143,52 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #fff;
-        font-weight: 100;
-        font-size: 1.1em;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.138);
+        flex-wrap: nowrap;
+        font-size: 1.1rem;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.138);
         border-radius: 20px;
     }
 
-    .redes {
-        margin: 10px 0;
-        color: rgb(206, 208, 53);
-
+    .textoApresentacao {
+        margin: 20px 0;
+        color: #fff;
+        font-weight: 400;
     }
 
-    .redes i {
-        padding: 5px;
-        font-size: 1.9em;
-    }
-
+    .redes,
     .iconTec {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: rgb(206, 208, 53);
-
     }
 
-    .iconTec i {
+    .redes i,
+    .iconTec i {  
         padding: 5px;
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
-
-    .textoApresentacao {
-        margin-bottom: 20px;
-
-
-    }
-
-
-
 }
+@media only screen and (orientation: landscape) {
+    .perfil {
+        width: 8rem;  
+    }
 
+.landText{   
+    width: 320px;
+}
+    .textNome {
+        font-size: 1.5rem;
+    }
+    
+    .textoApresentacao {
+        margin: 5px 0;
+        color: #fff;
+        font-weight: 400;
+    }
+
+  }
 /* Tablet */
 @media only screen and (min-width : 768px) {
     /* Styles here */
