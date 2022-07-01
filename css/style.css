@@ -40,6 +40,41 @@ body {
     grid-area: perfil;
 }
 
+.menuSidebar {
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+}
+
+.navSide ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navSide a {
+    text-decoration: none;
+  
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-image: linear-gradient(to right, #ece9e624 0%, #ffffff24  51%, #ECE9E6  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(26, 92, 158);            
+ 
+    display: block;
+}
+.navSide a:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
 .landText {
     grid-area: landText;
 }
@@ -157,6 +192,7 @@ body {
 
 /* Tablet */
 @media only screen and (min-width : 768px) {
+
     /* Styles here */
     .perfil {
         width: 18rem;
