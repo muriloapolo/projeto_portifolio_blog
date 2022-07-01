@@ -41,7 +41,7 @@ body {
 }
 
 .menuSidebar {
-    margin: 0 auto;
+    margin: 30px auto;
     width: 90%;
     padding: 20px;
 }
@@ -49,24 +49,22 @@ body {
 .navSide ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .navSide a {
-    text-decoration: none;
-  
+    text-decoration: none;  
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    background-image: linear-gradient(to right, #ece9e624 0%, #ffffff24  51%, #ECE9E6  100%);
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #ece9e645 0%, #ffffff45  51%, #ECE9E6  100%);
     text-align: center;
     transition: 0.8s;
     background-size: 200% auto;
-    color: rgb(26, 92, 158);            
- 
+    color: rgb(26, 92, 158);
     display: block;
 }
 .navSide a:hover{
