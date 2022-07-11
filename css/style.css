@@ -222,22 +222,32 @@ body {
     .perfil {
         width: 300px;
     }
-.imgPerfil{
-    width: 7rem;
-}
+
+    .imgPerfil {
+        width: 8rem;
+    }
+
     .landText {
         width: 300px;
     }
-    .apresentacao{
-        margin: 0;
-        padding: 0;
+
+    .menuSidebar {
+        width: 100%;
+        margin: 10px 0;
     }
+
+    .apresentacao {
+        margin: 0;
+        padding: 5px 15px;
+    }
+
     .apresLangs {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .apresLangs i {
         justify-content: space-evenly;
 
