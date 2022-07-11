@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
     transition: 0.5s all;
-   
+
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 }
 
 .sidebar {
-    
+
     background-image: url(../assets/image/bgPerfil.jpg);
     background-position: center;
     background-size: cover;
@@ -41,7 +41,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    
+
 }
 
 .containerSide {
@@ -55,7 +55,7 @@ body {
     padding: 10px 0;
     margin: 0 auto;
     box-sizing: border-box;
-   
+
 }
 
 .perfil {
@@ -95,11 +95,12 @@ body {
     width: 300px;
     display: flex;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     justify-content: space-around;
 }
 
-.redes i, .apresLangs i {
+.redes i,
+.apresLangs i {
     padding: 5px;
     font-size: 1.8rem;
     color: rgb(206, 208, 53);
@@ -117,62 +118,65 @@ body {
     background-color: rgba(255, 255, 255, 0.138);
     border-radius: 20px;
 }
+
 .textoApresentacao {
     color: #fff;
     font-weight: 400;
 }
 
-.apresLangs{
+.apresLangs {
     margin-top: 20px;
- list-style-type: none;
- display: flex;
- justify-content: space-between;
- align-items: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.apresLangs ul li{
+
+.apresLangs ul li {
 
     display: block;
-   
+
 
 }
-.menuSidebar {    
+
+.menuSidebar {
     width: 100%;
-   margin: 20px 0;
+    margin: 20px 0;
 }
 
-    /* Mover para fora*/
+/* Mover para fora*/
 
-  
 
-    .navSide ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-    }
 
-    .navSide a {
-        text-decoration: none;
-        border-radius: 10px;
-        padding: 5px 10px;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-size: 1rem;
-        /* background-image: linear-gradient(to right, #ece9e6 0%, #ffffff 51%, #ECE9E6 100%); */
-        background-image: linear-gradient(to right, #b4a8f9 0%, #91d1f3 51%, #ffffff 100%);
-        text-align: center;
-        transition: 0.9s;
-        background-size: 200% auto;
-        color: rgb(4, 0, 0);
-        display: block;
-    }
+.navSide ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    .navSide a:hover {
-        background-position: left center;
-        /* change the direction of the change here */
-        color: #fff;
-        text-decoration: none;
+.navSide a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* background-image: linear-gradient(to right, #ece9e6 0%, #ffffff 51%, #ECE9E6 100%); */
+    background-image: linear-gradient(to right, #b4a8f9 0%, #91d1f3 51%, #ffffff 100%);
+    text-align: center;
+    transition: 0.9s;
+    background-size: 200% auto;
+    color: rgb(4, 0, 0);
+    display: block;
+}
 
-    }
+.navSide a:hover {
+    background-position: left center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+
+}
 
 .blog {
     grid-area: blog;
@@ -188,11 +192,11 @@ body {
 
 /* smarthphone */
 @media only screen and (min-width : 320px) {
-.sidebar{
- width: 100%;
- height: 100vh;
-   
-}
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+
+    }
 
 
 }
@@ -200,35 +204,53 @@ body {
 
 /* Tablet */
 @media only screen and (min-width : 768px) {
-  .sidebar{
-    width: 100%;
-    height: 100vh;
-    
-  }
-  .containerSide{
-    flex-direction: row;
-    flex-wrap: wrap;
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .containerSide {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 90vh;
+        justify-content: space-around;
 
 
-  }
-  .perfil{
-    width: 300px;
-  }
- .landText{
-    width: 300px;
- }
+    }
 
-  .apresLangs i{
-    justify-content: space-evenly;
- 
-}
+    .perfil {
+        width: 300px;
+    }
+
+    .landText {
+        width: 300px;
+    }
+    .apresentacao{
+        margin: 0;
+        padding: 0;
+    }
+    .apresLangs {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .apresLangs i {
+        justify-content: space-evenly;
+
+    }
+
+
+
 
 }
 
 /* desktop */
 @media only screen and (min-width : 968px) {
+
     /* Styles here */
-    .sidebar{
+    .sidebar {
         width: 320px;
         height: 100vh;
     }
