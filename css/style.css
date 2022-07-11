@@ -42,6 +42,7 @@ body {
     top: 0;
     left: 0;
 
+
 }
 
 .containerSide {
@@ -192,10 +193,16 @@ body {
 
 /* smarthphone */
 @media only screen and (min-width : 320px) {
+    .blog{
+        overflow-y: hidden;
+       }
+    .blog{
+        overflow: hidden;
+    }
     .sidebar {
         width: 100%;
         height: 100vh;
-
+      
     }
 
 
@@ -204,13 +211,10 @@ body {
 
 /* Tablet */
 @media only screen and (min-width : 768px) {
-    .sidebar {
-        width: 100%;
-        height: 100vh;
-
-    }
-
-    .containerSide {
+   .blog{
+    overflow-y: hidden;
+   }
+        .containerSide {
         flex-direction: row;
         flex-wrap: wrap;
         height: 90vh;
@@ -260,7 +264,9 @@ body {
 
 /* desktop */
 @media only screen and (min-width : 968px) {
-
+    .blog{
+        overflow-Y: auto;
+    }
     /* Styles here */
     .sidebar {
         width: 320px;
