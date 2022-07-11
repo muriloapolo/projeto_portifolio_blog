@@ -23,7 +23,7 @@ body {
         "sidebar blog blog"
         "sidebar blog blog"
         "sidebar blog blog";
-    width: 100vw;
+    width: 100%;
     height: 100%;
 
 }
@@ -178,7 +178,8 @@ body {
 /* smarthphone */
 @media only screen and (min-width : 320px) {
 .sidebar{
-    width:100%;
+ width: 100%;
+   
 }
 
 
@@ -188,7 +189,7 @@ body {
 /* Tablet */
 @media only screen and (min-width : 768px) {
   .sidebar{
-    width: 300px;
+    width: 100%;
   }
   .apresLangs i{
     justify-content: space-evenly;
@@ -197,6 +198,9 @@ body {
 }
 
 /* desktop */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 968px) {
     /* Styles here */
+    .sidebar{
+        width: 350px;
+    }
 }
