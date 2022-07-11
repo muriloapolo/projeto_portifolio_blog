@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
     transition: 0.5s all;
-    overflow-x: hidden;
+   
 }
 
 .container {
