@@ -30,26 +30,31 @@ body {
 }
 
 .sidebar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    
     background-image: url(../assets/image/bgPerfil.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
     position: fixed;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    padding:0 10px;
+    
 }
 
 .containerSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 90%;
+    height: 90%;
     padding: 10px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
    
 }
 
@@ -74,6 +79,9 @@ body {
 
 .landText {
     grid-area: landText;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .textNome {
@@ -84,10 +92,11 @@ body {
 }
 
 .redes {
-    width: 100%;
+    width: 300px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    align-items: center; 
+    justify-content: space-around;
 }
 
 .redes i, .apresLangs i {
@@ -194,11 +203,26 @@ body {
   .sidebar{
     width: 100%;
     height: 100vh;
+    
   }
+  .containerSide{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+  }
+  .perfil{
+    width: 300px;
+  }
+ .landText{
+    width: 300px;
+ }
+
   .apresLangs i{
     justify-content: space-evenly;
  
 }
+
 }
 
 /* desktop */
