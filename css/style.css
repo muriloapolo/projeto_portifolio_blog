@@ -47,7 +47,7 @@ body {
 }
 .containerSide {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -63,17 +63,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 
 .imgPerfil {
-    display: block;
+
     width: 10rem;
     border-radius: 50%;
     overflow: hidden;
     outline: 3px solid rgb(255, 255, 255);
     box-shadow: 0px 1px 10px rgb(255, 255, 255);
-    margin-bottom: 10px;
+
 }
 
 
@@ -82,6 +84,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .textNome {
@@ -91,49 +94,38 @@ body {
     color: #fff;
 }
 
-.redes {
+/* .redes {
     width: 300px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-}
+} */
 
-.redes i,
-.apresLangs i {
-    padding: 5px;
-    font-size: 1.8rem;
-    color: rgb(206, 208, 53);
-}
+
 
 .apresentacao {
     grid-area: apresentacao;
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 1.1rem;
-    padding: 10px 20px;
+    align-items: center;  
+    padding: 10px ;
     background-color: rgba(255, 255, 255, 0.138);
     border-radius: 20px;
+    width: 100%;
 }
 
-.textoApresentacao {
-    color: #fff;
-    font-weight: 400;
-}
 
-.apresLangs {
-    margin-top: 20px;
-    list-style-type: none;
+.redes,.langs{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    list-style-type: none;  
+    justify-content: space-around; 
 }
-
-.apresLangs ul li {
-    display: block;
+.redes i,
+.apresentacao i {
+    padding: 15px;
+    font-size: 1.8rem;
+    color: rgb(206, 208, 53);
 }
 
 .menuSidebar {

@@ -4,16 +4,13 @@
         display: none;
     }
 
-    .container {
-        display: none;
-    }
-
     .sidebar {
         width: 100vw;
         height: 100vh;
-        overflow-y: auto;
+        overflow-y: hidden;
         min-width: 320px;
     }
+  
 
 }
 
@@ -114,9 +111,9 @@
         display: none;
     }
 
-    .perfil {
+    /* .perfil {
         width: 300px;
-    }
+    } */
 
 
     /* .containerSide {
@@ -124,7 +121,6 @@
         flex-wrap: nowrap;
         height: 90vh;
         justify-content: space-around;
-        min-height: 90vh;
         min-width: 320px;
     } */
 
@@ -140,11 +136,6 @@
     .menuSidebar {
         width: 100%;
         margin: 10px 0;
-    } */
-    /* 
-    .apresentacao {
-        margin: 0;
-        padding: 5px 15px;
     } */
 
     /* .apresLangs {
@@ -165,7 +156,6 @@
 
     .blog {
         position: absolute;
-        float: right;
         grid-area: blog;
         padding: 0 20px 0 50px;
         background-color: #b4a8f9;
@@ -173,10 +163,11 @@
         width: calc(100% - 320px);
         right: 0;
         top: 68px;
-        
+
 
     }
-/* 
+
+    /* 
     .footer {
         display: flex;
         position: fixed;
@@ -200,6 +191,7 @@
 
 /* desktop */
 @media only screen and (min-width : 968px) {
+   
     .nav-center {
         margin: 0 auto;
         display: flex;
@@ -229,14 +221,9 @@
         margin: 1rem;
         color: rgb(0, 0, 0);
         transition: 0.5s all;
-       
-     
     }
 
     .social-icons a:hover {
         color: #0050fe;
-   
-
-
     }
 }
