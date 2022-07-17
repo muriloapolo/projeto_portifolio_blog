@@ -5,11 +5,14 @@
     }
 
     .sidebar {
+        display: block;
         width: 100vw;
         height: 100vh;
         overflow-y: hidden;
         min-width: 320px;
+        transition: all 0.5s;
     }
+    
   
 
 }
@@ -17,17 +20,38 @@
 @media only screen and (min-width : 768px) {
 
     /*nav bar responsive */
+.sidebar{
+    display: flex;
+    width: 320px;
+
+}
+       
+  
+   
     .navBlog-principal {
         display: block;
         position: fixed;
         right: 0;
         top: 0;
-        width: calc(100% - 320px);
+        width:calc(100% - 320px);
         background: rgb(255, 255, 255);
         box-shadow: 0 0 10px rgba(132, 116, 255, 0.824);
         z-index: 9000;
-    }
+ 
 
+    }
+    .blog {
+        display: flex;
+        position: absolute;
+        grid-area: blog;
+        padding: 0 20px 0 80px;
+        background-color: #b4a8f9;
+        background-repeat: repeat;
+        width: calc(100% - 320px);
+        right: 0;
+        top: 68px;
+
+        }
     .nav-header {
         display: flex;
         align-items: center;
@@ -99,12 +123,11 @@
 
 
     .container {
+  
         display: flex;
     }
 
-    .sidebar {
-        width: 320px;
-    }
+
 
 
     .social-icons {
@@ -154,18 +177,9 @@
     /* Teste Responsividade */
 
 
-    .blog {
-        position: absolute;
-        grid-area: blog;
-        padding: 0 20px 0 50px;
-        background-color: #b4a8f9;
-        background-repeat: repeat;
-        width: calc(100% - 320px);
-        right: 0;
-        top: 68px;
+    
 
 
-    }
 
     /* 
     .footer {
@@ -184,20 +198,43 @@
         margin: 0;
         padding: 0;
     } */
-
+    .expande{
+        width: calc(100% - 320px);
+    }
+    .origem{
+        width: 100%;
+    }
+    .sidebarRespNone{
+        display: none;
+    }
+    .sidebarRespBlock{
+        width: 320px;
+        display: block;
+    }
 
 }
 
 
 /* desktop */
 @media only screen and (min-width : 968px) {
-   
+    .sidebar {                
+        display: block;
+        width: 320px;
+    }
+    .navBlog-principal{
+        width: calc(100% - 320px);;
+    }
+    .blog{
+        width: calc(100% - 320px);
+    }
+  
     .nav-center {
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
+        
     }
 
     .social-icons {
@@ -226,4 +263,18 @@
     .social-icons a:hover {
         color: #0050fe;
     }
+ 
+    .origem{
+        width: 100%;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .sidebarRespNone{
+        display: none;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .sidebarRespBlock{
+        display: block;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
 }
