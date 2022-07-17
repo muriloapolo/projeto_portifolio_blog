@@ -63,3 +63,82 @@
 ---------------///////////https://grid.layoutit.com/?id=o9uC3Oj ////////////////--------------------
 válido
 https://grid.layoutit.com/?id=lT8JUmz
+
+
+
+************************************
+ .navBlog-principal {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: calc(100vw - 320px);
+        background: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgba(132, 116, 255, 0.824);
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        font-size: 1.5rem;
+        color: #000;
+        background: transparent;
+        border-color: transparent;
+        transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    .nav-toggle:hover {
+        color: blue;
+        transform: rotate(90deg);
+    }
+
+    .logo {
+        display: block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .links a {
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin-left: 0.5rem;
+        transition: 0.5s all;
+    }
+
+    .links a:hover {
+        background: rgba(128, 128, 128, 0.11);
+        color: blue;
+        border-radius: 10px;
+    }
+
+    .links,
+    .social-icons {
+        list-style-type: none;
+    }
+
+    .social-icons {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    /* Responsive Classes */
+    .links {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .show-links {
+        height: 10rem;
+        transition: 0.5s all;
+    }

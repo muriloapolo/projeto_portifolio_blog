@@ -12,3 +12,8 @@ navToggle.addEventListener('click', function(){
     // }
     links.classList.toggle('show-links');
 })
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM completamente carregado e analisado");
+  });
