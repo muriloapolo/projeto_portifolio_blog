@@ -2,439 +2,202 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- font awesome -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/css.css" />
+  <link rel="stylesheet" href="./css/responsividade.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- estilo principal -->
-  <link rel="stylesheet" href="./css/configs.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsividade.css">
-  
-  <title>Murilo Apolonio - Portifólio</title>
-  <meta name="author" content="Murilo Apolonio">
-  <meta name="description" content="Portifólio e blog pessoal">
-  <meta name="keywords" content="portifolio, blog, web, desenvolvimento">
-  <meta name="rating" content="general" />
-  <meta http-equiv="content-language" content="pt-br" />
-  <meta name="copyright" content="Pertence a Murilo Apolonio" />
+
+  <title>Document</title>
 </head>
 
 <body>
-  <aside class="sidebar">
-    <div class="containerSide">
-      <!-- Menu lateral -->
-      <div class="perfil">
-        <img src="./assets/image/perfil.jpg" alt="Murilo Apolonio" class="imgPerfil">
-      </div>
-      <div class="landText">
-        <p class="textNome">Murilo Apolonio</p>
-        <ul class="redes">
-          <li><a href=""><i class="fa-brands fa-github-square"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-twitter-square"></i></a></li>
-        </ul>
-      </div>
-      <div class="menuSidebar">
-        <nav class="navSide">
+  <div class="container">
+    <div class="navPrincipal">
+      <nav>
+        <a class="logo" href="./index.html">Murilo Apolonio</a>
+        <div class="navList">
           <ul>
-            <li><a href="#home.html">home</a></li>
-            <li><a href="#portfolio.html">portifolio</a></li>
-            <li><a href="#sobre.html">sobre</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">projetos</a></li>
+            <li><a href="">sobre</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="apresentacao">         
-        <ul class="langs">
-          <li><i class="fa-brands fa-html5"></i></li>
-          <li><i class="fa-brands fa-js"></i></li>
-          <li><i class="fa-brands fa-css3-alt"></i></li>
-          <li><i class="fa-brands fa-php"></i></li>
-          <li><i class="fa-brands fa-node"></i></li>
-        </ul>
-      </div>
-    </div>
-  </aside> 
-     <!-- fim Menu lateral -->  
-   <!-- container principal -->
-
-  <div class="container">  
-    <!-- Navegação principal do blog -->
-  
-
-    <nav class="navBlog-principal">
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <a class="logo" href="./index.html" />ApoloCode</a>
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
         </div>
-        <!-- links -->
-        <ul class="links">
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="portifolio.html">Projetos</a>
-          </li>
-          <li>
-            <a href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-        <!-- social media -->
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.twitter.com/muriloapolo">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.github.com/muriloapolo">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Postagens -->
+        <button class="btnResponsive"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </div>
 
-    <section>
-    <div class="blog">
-      <button id="sideHome">
-        <i class="fa-solid fa-angles-left"></i>
-      </button>
-      <!-- blog inicio -->
-        <main class="conteudoPrincipal">
-          <!-- container do blog-->
-          <div class="post-project-main">
-            <!-- container principal -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
+    <div class="principalBlog">
+      <main>
+        <header>
+          <h1> Portifólio</h1>
+          <h2>Construindo pontes entre você e seus sonhos.</h2>
+          <h3>Galeria de Projetos</h3>
+        </header>
+        <section class="content">
+
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
             </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto">Html JavaScript Css</span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
             </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
             </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
-            <!-- postagem projeto -->
-            <div class="postContainer">
-              <!-- postagem principal -->
-              <div class="titleProjeto">
-                <!-- titulos da postagem -->
-                <h2 class="titulo">Navbar</h2>
-              </div>
-              <div class="imagemProjeto">
-                <!-- imagem do post -->
-                <img src="" alt="">
-              </div>
-              <div class="textoPost">
-                <!-- texto do post -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse tempore veritatis aliquam et sint
-                  id blanditiis minima exercitationem corporis repellendus aliquid vero voluptatum eligendi, quia,
-                  provident quidem quis voluptate! Repellat ex commodi exercitationem tempora?</p>
-                <div class="refProjeto">
-                  <span class="tecProjeto"></span>
-                  <a href=""> GitHubCode</a>
-                </div>
-              </div>
-              <div class="footerProjeto">
-                <span class="timeDateHour"> 25 de jamabrimajuhoagsetounodez 2022</span>
-                <legend>Murilo Apolonio</legend>
-              </div>
-            </div>
-            <!-- fim postagem projeto -->
           </div>
-        </main>
-      </section>     
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imagemProjeto"><img src="#" alt="" /></div>
+            <div class="headerCard">
+              <h3>Site Oficina</h3>
+            </div>
+            <div class="conteudoProjetoCard">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deleniti, dolore hic accusamus earum eligendi autem?
+            </div>
+            <div class="linksCardProjeto">
+              <a href="">github</a>
+              <a href="">project.com</a>
+            </div>
+          </div>
+
+        </section>
+      </main>
     </div>
-  
-  </div><!-- fim container principal -->
-  <!-- <footer class="containerFooter footer">
-    <div class="linksFooter">
-     <ul>
-      <li><a href="">home</a></li>
-      <li><a href="">portifolio</a></li>
-      <li><a href=""></a>sobre</li>
-     </ul>        
+    <div class="footerMain">
+      <footer>
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">projetos</a></li>
+          <li><a href="">sobre</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="">github</a></li>
+          <li><a href="">instagram</a></li>
+          <li><a href="">twitter</a></li>
+        </ul>
+      </footer>
     </div>
-    <div class="infoFooter">
-      <h2>Murilo Apolonio</h2>
+
+    <aside class="asideBarra">
+      <div class="containerAside">
+
+        <div class="tituloLateral">
+          <h2>Murilo Apolonio</h2>
+          <h3>Desenvolvedor Web</h3>
+
+        </div>
+        <div class="asideImgPerfil">
+          <img src="./assets/sidebar/imgPerfil.jpg" alt="Foto Perfil Murilo Apolonio">
+        </div>
+      
+      <div class="redesLateral">
+        <a class="swing" href=""><i class="fa-brands fa-github"></i></a>
+        <a class="swing" href=""><i class="fa-brands fa-twitter"></i></a>
+        <a class="swing" href=""><i class="fa-brands fa-instagram"></i></a>
+        <a class="swing" href="mailto:muriloapolonio@outlook.com?subject=Gostaria de conversar sobre um projeto."><i
+            class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="textoLateral">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem totam suscipit cupiditate laudantium id impedit ex, expedita vitae necessitatibus.</p>
+      </div>
     </div>
-  </footer> -->
-  <script src="./js/main.js"></script>
+    </aside>
+
+  </div>
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>

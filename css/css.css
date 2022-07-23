@@ -1,0 +1,355 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "asideBarra navPrincipal"
+    "asideBarra principalBlog"
+    "asideBarra footerMain";
+  grid-template-columns: 220px 4fr;
+  grid-template-rows: 70px 1fr 60px;
+  box-sizing: border-box;
+  background-color: rgb(9, 146, 201);
+  background-repeat: repeat;
+  background-size: cover;
+  column-gap: 3px;
+
+}
+
+.container>div {
+  border: 1px dashed #888;
+}
+
+.asideBarra {
+  grid-area: asideBarra;
+  height: 100vh;
+  background-color: rgb(23, 23, 82);
+  background-image: url(../assets/bgAside.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 223px;
+  
+}
+
+
+
+
+.navPrincipal {
+
+  background-color: rgb(255, 255, 255);
+  grid-area: navPrincipal;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 0 20px rgba(104, 64, 64, 0.795);
+
+}
+
+.navPrincipal nav {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.navPrincipal .logo {
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navPrincipal nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 350px;
+  justify-content: space-evenly;
+
+  font-family: monospace;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.navPrincipal a {
+  border: 1px solid;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.navPrincipal a:hover {
+  background-color: rgb(221, 230, 221);
+  color: blue;
+}
+
+.navPrincipal a:active {
+  color: rgb(255, 8, 0);
+}
+
+.btnResponsive {
+  display: none;
+  text-align: center;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+
+}
+
+.btnResponsive i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btnResponsive:active {
+  transition: all 0.5s ease;
+  /* transform: translate(-1px,1px); */
+  transform: rotateZ(-180deg);
+}
+
+
+.principalBlog {
+  grid-area: principalBlog;
+}
+
+.footerMain {
+  grid-area: footerMain;
+}
+
+
+/* **Conteúdos dos projetos ** */
+
+.content {
+  background-color: rgb(255, 255, 255);
+  padding: 40px 40px 0 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.card {
+  /* border: 1px solid; */
+  background-color: #fff;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 1px 10px 10px rgba(17, 0, 0, 0.514);
+  width: 300px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.imagemProjeto {
+  background: url(../assets/generico.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+.headerCard {
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(104, 104, 70);
+
+}
+
+.conteudoProjetoCard {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: left;
+  background-color: rgba(255, 228, 196, 0.568);
+}
+
+.linksCardProjeto {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: .9rem;
+  position: absolute;
+  bottom: 10px;
+}
+
+.linksCardProjeto a {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  background-color: rgb(112, 112, 241);
+  box-shadow: 0 5px 3px rgba(43, 51, 4, 0.658);
+  color: #fff;
+  padding: 8px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.linksCardProjeto a:first-child {
+  background-color: rgba(41, 8, 8, 0.801);
+}
+.linksCardProjeto a:active{
+  transform: rotateX(180deg);
+}
+
+
+/* Perfil lateral */
+/* Nome / função*/
+.containerAside{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.tituloLateral h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+.tituloLateral h3{
+  text-align: center;
+  color: #888;
+}
+
+/* imagem perfil */
+.asideImgPerfil{
+  display: flex;
+  width: 220px;
+  height: 220px;
+  background-color: aqua;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid rgb(10, 12, 124);
+}
+.asideImgPerfil img{
+  width: 220px;
+}
+.redesLateral{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(136, 136, 136, 0.171);
+
+}
+.redesLateral a{
+  display: block;
+  float: left;
+  padding: 10px;
+  font-size: 1.4rem;
+  color: black;
+  transition: 0.8s all;
+}
+
+.redesLateral a:hover{
+  color: #fff;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/*Animação gerada por https://www.theappguruz.com/tag-tools/web/CSSAnimations/ */
+
+  @-webkit-keyframes swing {
+  20% {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+  transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+  transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  }
+  @keyframes swing {
+  20% {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+  transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+  transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  }
+
+.textoLateral{
+  background-color: rgba(136, 136, 136, 0.171);
+  padding: 5px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-indent: 50px;
+  font-style: italic;
+}
+
+
