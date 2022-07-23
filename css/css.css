@@ -144,10 +144,12 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 40px 40px 0 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  height: 100vh;
   box-sizing: border-box;
 
 }
@@ -199,10 +201,10 @@ body {
 .linksCardProjeto {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: .9rem;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
 }
 
 .linksCardProjeto a {
@@ -217,7 +219,7 @@ body {
   box-shadow: 0 5px 3px rgba(43, 51, 4, 0.658);
   color: #fff;
   padding: 8px;
-  width: 120px;
+  width: 110px;
   cursor: pointer;
 }
 
@@ -233,20 +235,21 @@ body {
 /* Nome / função*/
 .containerAside{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   height: 100%;
-
 }
 
 .tituloLateral h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
+  font-size: 1.6rem;
   letter-spacing: .1rem;
   text-align: center;
 }
 .tituloLateral h3{
+  font-size: 1rem;
   text-align: center;
   color: #888;
 }
@@ -254,17 +257,20 @@ body {
 /* imagem perfil */
 .asideImgPerfil{
   display: flex;
-  width: 220px;
-  height: 220px;
+  width: 13rem;
   background-color: aqua;
   border-radius: 50%;
-  justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 2px solid rgb(10, 12, 124);
+  outline: 2px solid rgb(10, 12, 124);
+
 }
 .asideImgPerfil img{
-  width: 220px;
+  width: 100%;
+  height: 100%;
+
+
+ 
 }
 .redesLateral{
   display: flex;
@@ -353,3 +359,37 @@ body {
 }
 
 
+.footerMain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(128, 166, 236);
+  height: 30vh;
+}
+.footerMain ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none; 
+}
+.footerMain ul li {  
+  padding: 5px;
+}
+.footerMain ul li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.5s;
+}
+.footerMain ul li a:hover{
+  color: rgb(0, 0, 145);
+}
+
+.sociaisMainFooter span{
+  font-weight: 300;
+  color: rgb(15, 14, 13);  
+  font-size: 1.3rem;
+}
+.footerMain p{
+  color: rgb(112, 49, 49);
+}
