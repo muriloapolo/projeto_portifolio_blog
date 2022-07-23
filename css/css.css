@@ -151,7 +151,6 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-
 }
 
 .card {
@@ -364,7 +363,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(128, 166, 236);
-  height: 350px;
+  height: 150px;
 }
 .footerMain ul{
   padding: 0;
