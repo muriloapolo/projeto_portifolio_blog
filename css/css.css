@@ -361,11 +361,15 @@ body {
 .footerMain{
   display: flex;
   justify-content: space-around;
+  flex-shrink: shrink;
   align-items: center;
   background-color: rgb(128, 166, 236);
-  height: 150px;
+  height: fit-content;
+  
 }
 .footerMain ul{
+  width: auto;
+  height: fit-content;
   padding: 0;
   margin: 0;
   list-style-type: none; 
