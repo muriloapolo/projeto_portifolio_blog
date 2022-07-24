@@ -26,13 +26,13 @@
   top: 70px;
   right: 0;
   z-index: 999;
-  transition: all 0.6s;
+
 }
 .show-links ul{
   display: flex;
   flex-direction: column;
   height: 250px;
-  transition: all 0.7s;
+
 }
 .show-links li a{
   border: none;
