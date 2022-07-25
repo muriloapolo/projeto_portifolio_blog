@@ -6,19 +6,17 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-
-  
-}
 
 @media screen and (max-width: 768px) {
 
   .card {
-    width: 100%;
+    width: 100%;    
   }
   
   .navList {
     display: none;
+
+
   }
 .show-links{
   display: flex;
@@ -26,12 +24,12 @@
   top: 70px;
   right: 0;
   z-index: 999;
-
 }
 .show-links ul{
   display: flex;
   flex-direction: column;
   height: 250px;
+
 
 }
 .show-links li a{
@@ -39,10 +37,11 @@
   display: block;
   padding: 25px;
   width: 100%;
+
 }
 
-  .btnResponsive {
-    transition: all 0.5s;
+  .btnResponsive {    
+    transition: all 0.5ms;
     display: block;
   }
 
@@ -58,9 +57,24 @@
       "footerMain footerMain";
 
   }
+/* promo
+  .perfilCard{
+    flex-direction: column;
+  }
+  .textoCardPerfil, .imagemFlutuante{
+    width: 100%;
+    height: 100%;
+  }
+  .imgPerfilCard{
+    width: 90%;
+    height: 100%;
+  }
+ */
 
+  /* navegacao principal*/
   .navPrincipal nav {
     justify-content: space-around;
+ 
 
   }
 
@@ -87,6 +101,7 @@
 }
 
 @media screen and (max-width: 968px) {
+
 
   .asideBarra,
   aside {
