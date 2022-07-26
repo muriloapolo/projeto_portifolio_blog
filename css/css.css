@@ -31,9 +31,7 @@
 
 
 body {
-  /* background-color: #6F3DFF; */
-  max-width: 1900px;
-  margin: 0 auto;
+  background-color: #000000;
   height: 100%;
 }
 
@@ -53,6 +51,10 @@ body {
   background-repeat: repeat;
   background-size: contain;
   column-gap: 4px;
+
+  /* tamanho máximo */
+  max-width: 1600px;
+  margin: 0 auto;
 
 }
 
@@ -224,6 +226,7 @@ body {
   font-size: clamp(0.8rem, 1.3rem, 2rem);
   white-space: nowrap;
   font-family: var(--fonte-linksPagina-fonte);
+  margin-bottom: 5px;
 }
 
 .textoPromo {
