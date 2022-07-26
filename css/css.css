@@ -82,7 +82,8 @@ body {
   grid-area: navPrincipal;
   display: flex;
   align-items: center;
-  box-shadow: 6px 0 20px rgba(104, 64, 64, 0.795);
+  box-shadow: 6px 0 20px rgba(70, 5, 5, 0.795);
+
 
 
 }
@@ -117,6 +118,7 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   background-color: #fff;
+
 }
 
 .navPrincipal a {
@@ -166,7 +168,7 @@ body {
 /* Header Principal textos */
 .entreSections {
   text-align: center;
-  height: 220px;
+  height: 180px;
 }
 
 .entreSections .t1 {
@@ -187,7 +189,7 @@ body {
   font-family: var(--fonte-texto-card);
   color: rgb(252, 252, 252);
   font-size: 1rem;
-  margin-bottom: 20px
+  margin-bottom: 10px
 }
 
 /* Section PERFIL CHAMAR WHATSAPP */
@@ -196,10 +198,10 @@ body {
   width: 100%;
   height: 100%;
   grid-template-areas: "textoCardPerfil imagemFlutuante"
-  "textoCardPerfil imagemFlutuante"
-  "textoCardPerfil imagemFlutuante"
-  "contatoGrid contatoGrid"
-  "contatoGrid contatoGrid";
+    "textoCardPerfil imagemFlutuante"
+    "textoCardPerfil imagemFlutuante"
+    "contatoGrid contatoGrid"
+    "contatoGrid contatoGrid";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
 }
@@ -208,35 +210,66 @@ body {
 
 .textoCardPerfil {
   grid-area: textoCardPerfil;
-
   border: 1px solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
-.textoCardPerfil>h1,
-h2 {
-  /* font-size: 2.5vmax;
-  white-space: nowrap; */
+.textoCardPerfil h1,
+.textoCardPerfil h2 {
+  font-size: 1.6rem;
+  white-space: nowrap;
 }
 
-.textoCardPerfil .textoPromo {
+.textoPromo {
   border: 1px solid;
-  padding: 50px 30px 0 30px;
+  padding: 20px;
   font-size: clamp(0.5em, 1rem, 1.5rem);
   font-family: var(--fonte-Texto-lateral);
+
 }
 
 .imagemFlutuante {
   grid-area: imagemFlutuante;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgPerfilCard {
- width: 100%;
- 
-
+  max-width: fit-content;
+  width: 100%;
 }
+
 .contatoGrid {
   border: 1px solid;
   grid-area: contatoGrid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatoGrid a {
+  text-transform: uppercase;
+  border: none;
+  padding: 20px 40px;
+  background-color: rgb(47, 197, 47);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 1px 1px 10px rgb(145, 16, 16);
+}
+
+.contatoGrid a:hover {
+  background-color: rgb(129, 160, 17);
+  box-shadow: 1px 1px 10px rgb(255, 0, 0);
+}
+
+.contatoGrid a:active {
+  color: #000;
+  transform: scale(1.2);
 }
 
 /* **Conteúdos dos projetos ** */

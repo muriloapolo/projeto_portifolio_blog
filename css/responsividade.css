@@ -5,7 +5,24 @@
     padding: 20px;
   }
 }
+@media screen and (max-width: 650px) {
+.perfilCard{
+  grid-template-areas: "textoCardPerfil"
+  "imagemFlutuante" 
+  "contatoGrid";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;  
+}
 
+.textoCardPerfil h1, .textoCardPerfil 
+h2 {
+font-size: 1.2rem;
+}
+.imgPerfilCard{
+
+  width: 80%;
+}
+}
 
 @media screen and (max-width: 768px) {
 
@@ -15,6 +32,7 @@
   
   .navList {
     display: none;
+   
 
 
   }
@@ -22,13 +40,14 @@
   display: flex;
   position: absolute;
   top: 70px;
-  right: 0;
+  right: 0; 
   z-index: 999;
 }
 .show-links ul{
   display: flex;
   flex-direction: column;
   height: 250px;
+ 
 
 
 }
@@ -57,7 +76,7 @@
       "footerMain footerMain";
 
   }
-/* promo
+/* promo */
   .perfilCard{
     flex-direction: column;
   }
@@ -69,11 +88,12 @@
     width: 90%;
     height: 100%;
   }
- */
+
 
   /* navegacao principal*/
   .navPrincipal nav {
     justify-content: space-around;
+
  
 
   }
