@@ -14,12 +14,12 @@
   grid-template-rows: 1fr 1fr 0.5fr;  
 }
 
-.textoCardPerfil h1, .textoCardPerfil 
+/* .textoCardPerfil h1, .textoCardPerfil 
 h2 {
-font-size: 1.2rem;
-}
+ font-size: 1.2rem;
+} */
 .imgPerfilCard{
-
+  width: fit-content;
   width: 80%;
 }
 }
