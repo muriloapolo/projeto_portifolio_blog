@@ -257,6 +257,9 @@ body {
 }
 
 .contatoGrid a {
+
+  font-family: var(--fonte-texto-card);
+  font-weight: 800;
   text-transform: uppercase;
   border: none;
   padding: 20px 40px;
@@ -267,11 +270,14 @@ body {
   box-shadow: 1px 1px 10px rgb(145, 16, 16);
 }
 
+
 .contatoGrid a:hover {
   background-color: rgb(129, 160, 17);
   box-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
-
+.contatoGrid a i{
+  font-size: 2rem;
+}
 .contatoGrid a:active {
   color: #000;
   transform: scale(1.2);
